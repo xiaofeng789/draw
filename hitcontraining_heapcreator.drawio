@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-29T12:34:59.140Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="kEzowXE7NelrFtLCePkj" version="24.2.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-29T12:36:17.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="NS3VW5eJXzNYb_gZKleD" version="24.2.0" type="github">
   <diagram name="第 1 页" id="Fr5cbRcazwO-UYm_Rkgn">
-    <mxGraphModel dx="2594" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2133" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -555,7 +555,7 @@
         <mxCell id="av2565oH3hsVs84lq1rJ-183" value="这个时候往chunk写就是50开始&amp;nbsp; 那么就会溢出到90" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1095" y="2480" width="370" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="av2565oH3hsVs84lq1rJ-184" value="这个时候再show 打印free的got表&lt;div&gt;通过got计算libc从而计算system&lt;/div&gt;&lt;div&gt;然后再将free_got改为system地址&lt;/div&gt;&lt;div&gt;然后free(3)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="av2565oH3hsVs84lq1rJ-184" value="这个时候再show 打印free的got表&lt;div&gt;通过got计算libc从而计算system&lt;/div&gt;&lt;div&gt;然后再edit将free_got改为system地址&lt;/div&gt;&lt;div&gt;然后free(3)&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1040" y="2876" width="320" height="93" as="geometry" />
         </mxCell>
       </root>
