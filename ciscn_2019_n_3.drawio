@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-30T07:25:48.711Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="T4PGRMWIw1Lghea0728s" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-30T07:27:32.234Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="en_7Gq0gJZjWIoqate2N" version="24.2.1" type="github">
   <diagram name="第 1 页" id="D5T53ktmF-T9hPa6oCvl">
-    <mxGraphModel dx="2830" dy="2264" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2408" dy="2033" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -291,6 +291,9 @@
         </mxCell>
         <mxCell id="clgjF5Q0c5kE44Q_ZB9x-29" value="system@plt" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="791" y="4350" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="clgjF5Q0c5kE44Q_ZB9x-30" value="需要注意的是chunk1的结构，0x200相当于chunk1的rec_str_free" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="410" y="4050" width="250" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
