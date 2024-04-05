@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-04-05T01:39:25.019Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="QG26QtX5yiz3dg6pO5XS" version="24.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-05T01:42:25.583Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="3102xVJkMWTb0RorBvQQ" version="24.2.2" type="github">
   <diagram name="第 1 页" id="erWBEHMT_IxAKbOyUFVJ">
     <mxGraphModel dx="2185" dy="651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -187,8 +187,11 @@
         <mxCell id="wYppeoMF1hL2vrdef08Q-2" value="思路二：" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="70" y="730" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wYppeoMF1hL2vrdef08Q-3" value="先malloc 一个chunk&lt;div&gt;然后释放&lt;/div&gt;&lt;div&gt;这个时候利用uaf&lt;/div&gt;&lt;div&gt;编辑这个chunk&lt;/div&gt;&lt;div&gt;使fd指向got表附近&lt;/div&gt;&lt;div&gt;然后malloc两次&lt;/div&gt;&lt;div&gt;先add&lt;/div&gt;&lt;div&gt;然后调用方法5，&lt;/div&gt;&lt;div&gt;malloc到got表&lt;/div&gt;&lt;div&gt;再将atoi的got表改为system&lt;/div&gt;&lt;div&gt;再调用atoi也就是输入选项的时候输入bash&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="710" width="280" height="180" as="geometry" />
+        <mxCell id="wYppeoMF1hL2vrdef08Q-3" value="先malloc 一个chunk&lt;div&gt;然后释放&lt;/div&gt;&lt;div&gt;这个时候利用uaf&lt;/div&gt;&lt;div&gt;编辑这个chunk&lt;/div&gt;&lt;div&gt;使fd指向p附近&lt;/div&gt;&lt;div&gt;然后malloc两次&lt;/div&gt;&lt;div&gt;先add&lt;/div&gt;&lt;div&gt;然后调用方法5，&lt;/div&gt;&lt;div&gt;malloc到p附近·&lt;/div&gt;&lt;div&gt;再将p改为atoi的got表&lt;/div&gt;&lt;div&gt;进行show泄露got&lt;/div&gt;&lt;div&gt;edit&lt;/div&gt;&lt;div&gt;再将atoi的got表改为system&lt;/div&gt;&lt;div&gt;再调用atoi也就是输入选项的时候输入bash&lt;/div&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="710" width="330" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="wYppeoMF1hL2vrdef08Q-4" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="870" width="140" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
