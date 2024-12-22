@@ -465,9 +465,14 @@
         <mxCell id="qBu99-noCMKF9a456cR6-162" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="385" y="4016" width="120" height="72" as="geometry" />
         </mxCell>
-        <mxCell id="qBu99-noCMKF9a456cR6-169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="qBu99-noCMKF9a456cR6-163">
+        <mxCell id="qBu99-noCMKF9a456cR6-169" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="qBu99-noCMKF9a456cR6-163" target="qBu99-noCMKF9a456cR6-167">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="670" y="4160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="588" y="4124" />
+              <mxPoint x="588" y="4120" />
+              <mxPoint x="670" y="4120" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="qBu99-noCMKF9a456cR6-163" value="0x80" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;" vertex="1" parent="1">
@@ -485,8 +490,22 @@
         <mxCell id="qBu99-noCMKF9a456cR6-168" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="qBu99-noCMKF9a456cR6-167" target="qBu99-noCMKF9a456cR6-163">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qBu99-noCMKF9a456cR6-167" value="unsortedbin" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="4080" width="120" height="60" as="geometry" />
+        <mxCell id="qBu99-noCMKF9a456cR6-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qBu99-noCMKF9a456cR6-167" target="qBu99-noCMKF9a456cR6-163">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="588" y="4077" />
+              <mxPoint x="588" y="4088" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qBu99-noCMKF9a456cR6-167" value="unsortedbin&lt;div&gt;mainarena +88&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="4062" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qBu99-noCMKF9a456cR6-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.077;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qBu99-noCMKF9a456cR6-163" target="qBu99-noCMKF9a456cR6-167">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qBu99-noCMKF9a456cR6-172" value="show(2) 这个时候查看2 即可获取mainarena+88的地址，通过计算偏移得到libc基地址" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="4280" width="470" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
