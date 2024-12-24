@@ -59,16 +59,22 @@
           <mxGeometry x="715" y="520" width="20" height="100" as="geometry" />
         </mxCell>
         <mxCell id="gBsAKVMqxP2NZPQDlt_y-18" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
-          <mxGeometry x="80" y="412.5" width="20" height="315" as="geometry" />
+          <mxGeometry x="62.82" y="398.45" width="45.63" height="368.75" as="geometry" />
         </mxCell>
         <mxCell id="gBsAKVMqxP2NZPQDlt_y-20" value="配&lt;div&gt;置&lt;/div&gt;&lt;div&gt;所&lt;/div&gt;&lt;div&gt;需&lt;/div&gt;&lt;div&gt;工&lt;/div&gt;&lt;div&gt;具&lt;/div&gt;&lt;div&gt;和&lt;/div&gt;&lt;div&gt;调&lt;/div&gt;&lt;div&gt;试&lt;/div&gt;&lt;div&gt;环&lt;/div&gt;&lt;div&gt;境&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-60" y="620" width="50" height="290" as="geometry" />
+          <mxGeometry x="-85" y="620" width="50" height="290" as="geometry" />
         </mxCell>
         <mxCell id="gBsAKVMqxP2NZPQDlt_y-21" value="深&lt;div&gt;入&lt;/div&gt;&lt;div&gt;研&lt;/div&gt;&lt;div&gt;究&lt;/div&gt;&lt;div&gt;不&lt;/div&gt;&lt;div&gt;同&lt;/div&gt;&lt;div&gt;类&lt;/div&gt;&lt;div&gt;型&lt;/div&gt;&lt;div&gt;的&lt;/div&gt;&lt;div&gt;漏&lt;/div&gt;&lt;div&gt;洞&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="620" width="50" height="290" as="geometry" />
+          <mxGeometry x="-5" y="620" width="50" height="290" as="geometry" />
         </mxCell>
         <mxCell id="gBsAKVMqxP2NZPQDlt_y-22" value="编&lt;div&gt;写&lt;/div&gt;&lt;div&gt;漏&lt;/div&gt;&lt;div&gt;洞&lt;/div&gt;&lt;div&gt;利&lt;/div&gt;&lt;div&gt;用&lt;/div&gt;&lt;div&gt;模&lt;/div&gt;&lt;div&gt;板&lt;/div&gt;&lt;div&gt;和&lt;/div&gt;&lt;div&gt;代&lt;/div&gt;&lt;div&gt;码&lt;/div&gt;&lt;div&gt;片&lt;/div&gt;&lt;div&gt;段&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="620" width="60" height="290" as="geometry" />
+          <mxGeometry x="65" y="620" width="60" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-23" value="Vim&amp;nbsp;&lt;div&gt;环&lt;/div&gt;&lt;div&gt;境&lt;/div&gt;&lt;div&gt;优&lt;/div&gt;&lt;div&gt;化&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="620" width="50" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-24" value="Docker&lt;div&gt;离&lt;/div&gt;&lt;div&gt;线&lt;/div&gt;&lt;div&gt;环&lt;/div&gt;&lt;div&gt;境&lt;/div&gt;&lt;div&gt;搭&lt;/div&gt;&lt;div&gt;建&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220.5" y="620" width="44.5" height="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
