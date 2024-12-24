@@ -1,9 +1,75 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="Aw2jdSEUTfqJSHIj9VZG">
-    <mxGraphModel>
+    <mxGraphModel dx="1740" dy="537" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-1" value="查阅文献资料" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-2" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gBsAKVMqxP2NZPQDlt_y-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="340" as="sourcePoint" />
+            <mxPoint x="400" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-3" value="确定该研究方向" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-4" value="查阅相关资料" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-5" value="查阅相关资料" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-6" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gBsAKVMqxP2NZPQDlt_y-4" target="gBsAKVMqxP2NZPQDlt_y-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="310" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="gBsAKVMqxP2NZPQDlt_y-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="410" as="sourcePoint" />
+            <mxPoint x="400" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-9" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="365.5" y="22.38" width="69" height="620.5" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-10" value="确定论文题目" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-11" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="365.5" y="160" width="69" height="620.5" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-12" value="确定研究内容" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-13" value="确定研究方法" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-14" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;实&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;验&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;法&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="580" width="60" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-15" value="&lt;div style=&quot;&quot;&gt;文&lt;/div&gt;&lt;div style=&quot;&quot;&gt;献&lt;/div&gt;&lt;div style=&quot;&quot;&gt;研&lt;/div&gt;&lt;div style=&quot;&quot;&gt;究&lt;/div&gt;&lt;div style=&quot;&quot;&gt;法&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="750" y="580" width="60" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-16" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="715" y="520" width="20" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-18" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="80" y="412.5" width="20" height="315" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-20" value="配&lt;div&gt;置&lt;/div&gt;&lt;div&gt;所&lt;/div&gt;&lt;div&gt;需&lt;/div&gt;&lt;div&gt;工&lt;/div&gt;&lt;div&gt;具&lt;/div&gt;&lt;div&gt;和&lt;/div&gt;&lt;div&gt;调&lt;/div&gt;&lt;div&gt;试&lt;/div&gt;&lt;div&gt;环&lt;/div&gt;&lt;div&gt;境&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="620" width="50" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-21" value="深&lt;div&gt;入&lt;/div&gt;&lt;div&gt;研&lt;/div&gt;&lt;div&gt;究&lt;/div&gt;&lt;div&gt;不&lt;/div&gt;&lt;div&gt;同&lt;/div&gt;&lt;div&gt;类&lt;/div&gt;&lt;div&gt;型&lt;/div&gt;&lt;div&gt;的&lt;/div&gt;&lt;div&gt;漏&lt;/div&gt;&lt;div&gt;洞&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="620" width="50" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="gBsAKVMqxP2NZPQDlt_y-22" value="编&lt;div&gt;写&lt;/div&gt;&lt;div&gt;漏&lt;/div&gt;&lt;div&gt;洞&lt;/div&gt;&lt;div&gt;利&lt;/div&gt;&lt;div&gt;用&lt;/div&gt;&lt;div&gt;模&lt;/div&gt;&lt;div&gt;板&lt;/div&gt;&lt;div&gt;和&lt;/div&gt;&lt;div&gt;代&lt;/div&gt;&lt;div&gt;码&lt;/div&gt;&lt;div&gt;片&lt;/div&gt;&lt;div&gt;段&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="620" width="60" height="290" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
