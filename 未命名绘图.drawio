@@ -13,7 +13,7 @@
         <mxCell id="_AaLgFBil8xgt6a195yZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_AaLgFBil8xgt6a195yZ-3" target="_AaLgFBil8xgt6a195yZ-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="_AaLgFBil8xgt6a195yZ-3" value="通过漏洞精心·编写的payload&amp;nbsp;&lt;div&gt;设置好端口和ip地址&lt;/div&gt;&lt;div&gt;payload&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="_AaLgFBil8xgt6a195yZ-3" value="通过漏洞精心·编写的payload&amp;nbsp;&lt;div&gt;设置好端口和ip地址&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="100" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="_AaLgFBil8xgt6a195yZ-5" value="顺着网线" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
