@@ -1,9 +1,27 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.1">
   <diagram name="第 1 页" id="s_wQmr6N81XxAiEoRkL8">
-    <mxGraphModel>
+    <mxGraphModel dx="1042" dy="1796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="_AaLgFBil8xgt6a195yZ-1" value="ELF附件" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="20" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_AaLgFBil8xgt6a195yZ-2" value="赛方靶机&lt;div&gt;其实是一个linux虚拟机，对应端口恰好运行着附件程序&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_AaLgFBil8xgt6a195yZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_AaLgFBil8xgt6a195yZ-3" target="_AaLgFBil8xgt6a195yZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_AaLgFBil8xgt6a195yZ-3" value="通过漏洞精心·编写的payload&amp;nbsp;&lt;div&gt;设置好端口和ip地址&lt;/div&gt;&lt;div&gt;payload&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_AaLgFBil8xgt6a195yZ-5" value="顺着网线" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_AaLgFBil8xgt6a195yZ-7" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-280" width="120" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
