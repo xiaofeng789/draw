@@ -1,9 +1,45 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="第 1 页" id="qSSBmuFkB8SRD-swPDqH">
-    <mxGraphModel>
+    <mxGraphModel dx="2117" dy="566" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-1" value="PWNBOX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-2" value="GUI界面" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-3" value="PWN环境虚拟机(OVF)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-4" value="可调式glibc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-6" value="&lt;div&gt;带有PWN环境的&lt;/div&gt;Ubuntu16&lt;div&gt;Ubuntu18&lt;/div&gt;&lt;div&gt;Ubuntu20&lt;/div&gt;&lt;div&gt;Ubuntu22&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-7" value="&lt;p style=&quot;margin-top: 3pt; margin-bottom: 3pt;&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-spacerun:&#39;yes&#39;;font-family:宋体;font-size:11.0000pt;&lt;br/&gt;mso-font-kerning:1.0000pt;&quot;&gt;2.23&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 11pt; background-color: initial;&quot;&gt;2.24&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 3pt; margin-bottom: 3pt;&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-spacerun:&#39;yes&#39;;font-family:宋体;font-size:11.0000pt;&lt;br/&gt;mso-font-kerning:1.0000pt;&quot;&gt;2.25&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 11pt; background-color: initial;&quot;&gt;2.31&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 3pt; margin-bottom: 3pt;&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-spacerun:&#39;yes&#39;;font-family:宋体;font-size:11.0000pt;&lt;br/&gt;mso-font-kerning:1.0000pt;&quot;&gt;2.32&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 11pt; background-color: initial;&quot;&gt;2.33&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 3pt; margin-bottom: 3pt;&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-spacerun:&#39;yes&#39;;font-family:宋体;font-size:11.0000pt;&lt;br/&gt;mso-font-kerning:1.0000pt;&quot;&gt;2.34&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 11pt; background-color: initial;&quot;&gt;2.35&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 3pt; margin-bottom: 3pt;&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-spacerun:&#39;yes&#39;;font-family:宋体;font-size:11.0000pt;&lt;br/&gt;mso-font-kerning:1.0000pt;&quot;&gt;2.36&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 11pt; background-color: initial;&quot;&gt;2.37&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 3pt; margin-bottom: 3pt;&quot; align=&quot;center&quot; class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;mso-spacerun:&#39;yes&#39;;font-family:宋体;font-size:11.0000pt;&lt;br/&gt;mso-font-kerning:1.0000pt;&quot;&gt;2.38&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; font-size: 11pt; background-color: initial;&quot;&gt;2.39&lt;/span&gt;&lt;/p&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="340" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-9" value="基础环境搭建" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-10" value="模板题目自动化攻击" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-11" value="离线环境搭建" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-12" value="Pwndbg、patchelf、Pwntools、Seccomp-tools等工具的安装" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="450" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-13" value="ret2text、ret2shellcode、ret2libc、静态编译下的无限输入、uaf" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="450" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="IPNNbplmGUOKHYBkvyw0-14" value="docker及其相关工具的检测与安装、docker换源、镜像与容器查看、离线环境搭建（Libc_Search、CTFwiki、CTF-All-In-One）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="450" width="160" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
